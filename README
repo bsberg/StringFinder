@@ -1,0 +1,38 @@
+README
+@author Brian Berg 
+
+This program is Case Study 3 of the Target interview process which I have chosen to do.
+In this program I was to create 3 methods to search 3 txt files and count the occurences of 
+a given word or phrase. 
+
+NOTES: 
+	- all are case sensative
+	- Method 3 compares sections of words as well ex. with input: the and text: they it will match
+	  and add +1
+
+METHOD 1:
+	A simple alg that will move character by character until it finds a match of the 
+	first charcater of the given word. If there is a match it will enter a loop in order 
+	to determine if that list ends in a match. If not it will break. 
+
+METHOD 2:
+	Using regular expressions (more specifically fscanf) the program will look for strings 
+	of length 10 followed by a space and match that to the given word. 
+
+METHOD 3: 
+	Uses the Bad Character Heuristic Boyer Moore Alg to preproccess the input and skip if possible some
+	of the comparisons. (I did have to look this up I left links in the corresponding methods). 
+
+TEST:
+	The test for each generates 2M random strings of lengths 1 through 10 and runs them across all 
+	3 methods sequentialy. 
+
+RUN:
+	To run the program type 
+		make 
+		make run 
+	Then follow the prompts 
+
+	To test type
+		make 
+		make runTest
